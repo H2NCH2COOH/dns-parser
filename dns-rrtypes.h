@@ -1,6 +1,6 @@
 #pragma once
 
-/* Build from IANA online data at 2018-11-29 15:55:13 +0800 */
+/* Build from IANA online data at 2018-11-30 06:00:15 +0000 */
 
 #define DNS_RRTYPE_A 1 /* a host address [RFC1035] */
 #define DNS_RRTYPE_NS 2 /* an authoritative name server [RFC1035] */
@@ -24,7 +24,7 @@
 #define DNS_RRTYPE_ISDN 20 /* for ISDN address [RFC1183] */
 #define DNS_RRTYPE_RT 21 /* for Route Through [RFC1183] */
 #define DNS_RRTYPE_NSAP 22 /* "for NSAP address  NSAP style A record" */
-#define DNS_RRTYPE_NSAP-PTR 23 /* "for domain name pointer  NSAP style" */
+#define DNS_RRTYPE_NSAP_PTR 23 /* "for domain name pointer  NSAP style" */
 #define DNS_RRTYPE_SIG 24 /* for security signature [RFC4034][RFC3755][RFC2535][RFC2536][RFC2537][RFC2931][RFC3110][RFC3008] */
 #define DNS_RRTYPE_KEY 25 /* for security key [RFC4034][RFC3755][RFC2535][RFC2536][RFC2537][RFC2539][RFC3008][RFC3110] */
 #define DNS_RRTYPE_PX 26 /* X.400 mail mapping information [RFC2163] */
