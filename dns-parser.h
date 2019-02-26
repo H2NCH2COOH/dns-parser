@@ -43,7 +43,7 @@ typedef struct
     uint16_t id; //Local endianness
     bool query;
     bool response;
-    uint8_t op_code; //Only 4-bit wide
+    uint8_t op_code;
     struct
     {
         bool aa;
@@ -53,7 +53,7 @@ typedef struct
         bool ad;
         bool cd;
     } flags;
-    uint8_t rcode; //Only 4-bit wide
+    uint8_t rcode;
 
     uint16_t query_count; //Local endianness
     uint16_t answer_count; //Local endianness
