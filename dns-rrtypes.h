@@ -1,6 +1,6 @@
 #pragma once
 
-/* Build from IANA online data at 2018-11-30 06:00:15 +0000 */
+/* Built from IANA online data at 2019-09-14 14:59:45 +0800 */
 
 #define DNS_RRTYPE_A 1 /* a host address [RFC1035] */
 #define DNS_RRTYPE_NS 2 /* an authoritative name server [RFC1035] */
@@ -64,6 +64,7 @@
 #define DNS_RRTYPE_CDNSKEY 60 /* DNSKEY(s) the Child wants reflected in DS [RFC7344] */
 #define DNS_RRTYPE_OPENPGPKEY 61 /* OpenPGP Key [RFC7929] */
 #define DNS_RRTYPE_CSYNC 62 /* Child-To-Parent Synchronization [RFC7477] */
+#define DNS_RRTYPE_ZONEMD 63 /* message digest for DNS zone [draft-wessels-dns-zone-digest] */
 #define DNS_RRTYPE_SPF 99 /*  [RFC7208] */
 #define DNS_RRTYPE_UINFO 100 /*  [IANA-Reserved] */
 #define DNS_RRTYPE_UID 101 /*  [IANA-Reserved] */
@@ -81,11 +82,12 @@
 #define DNS_RRTYPE_AXFR 252 /* transfer of an entire zone [RFC1035][RFC5936] */
 #define DNS_RRTYPE_MAILB 253 /* "mailbox-related RRs (MB  MG or MR)" */
 #define DNS_RRTYPE_MAILA 254 /* mail agent RRs (OBSOLETE - see MX) [RFC1035] */
-#define DNS_RRTYPE_ANY 255 /* A request for some or all records the server has available [RFC1035][RFC6895][RFC-ietf-dnsop-refuse-any-07] */
+#define DNS_RRTYPE_ANY 255 /* A request for some or all records the server has available [RFC1035][RFC6895][RFC8482] */
 #define DNS_RRTYPE_URI 256 /* URI [RFC7553] */
-#define DNS_RRTYPE_CAA 257 /* Certification Authority Restriction [RFC6844] */
+#define DNS_RRTYPE_CAA 257 /* Certification Authority Restriction [RFC-ietf-lamps-rfc6844bis-07] */
 #define DNS_RRTYPE_AVC 258 /* Application Visibility and Control [Wolfgang_Riedel] */
 #define DNS_RRTYPE_DOA 259 /* Digital Object Architecture [draft-durand-doa-over-dns] */
+#define DNS_RRTYPE_AMTRELAY 260 /* Automatic Multicast Tunneling Relay [draft-ietf-mboned-driad-amt-discovery] */
 #define DNS_RRTYPE_TA 32768 /* DNSSEC Trust Authorities "[Sam_Weiler][http://cameo.library.cmu.edu/][Deploying DNSSEC Without a Signed Root.  Technical Report 1999-19 */
 #define DNS_RRTYPE_DLV 32769 /* DNSSEC Lookaside Validation [RFC4431] */
 #define DNS_RRTYPE_Reserved 65535 /*   */

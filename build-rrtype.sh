@@ -5,7 +5,7 @@ curl https://www.iana.org/assignments/dns-parameters/dns-parameters-4.csv -o rrt
 echo '#pragma once' > dns-rrtypes.h
 echo >> dns-rrtypes.h
 
-echo "/* Build from IANA online data at $(date '+%Y-%m-%d %H:%M:%S %z') */" >> dns-rrtypes.h
+echo "/* Built from IANA online data at $(date '+%Y-%m-%d %H:%M:%S %z') */" >> dns-rrtypes.h
 echo >> dns-rrtypes.h
 
 tr -d '\n' < rrtypes.csv | tr '\r' '\n' | sed 's/        //' | \
