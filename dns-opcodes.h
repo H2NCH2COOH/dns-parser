@@ -5,3 +5,4 @@
 #define DNS_OPCODE_Status   2 /* [RFC1035] */
 #define DNS_OPCODE_Notify   4 /* [RFC1996] */
 #define DNS_OPCODE_Update   5 /* [RFC2136] */
+#define DNS_OPCODE_DSO      6 /* [RFC8490] */

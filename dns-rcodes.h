@@ -12,6 +12,7 @@
 #define DNS_RCODE_NotAuth   9  /* Server Not Authoritative for zone [RFC2136] */
 #define DNS_RCODE_NotAuth   9  /* Not Authorized [RFC2845] */
 #define DNS_RCODE_NotZone   10 /* Name not contained in zone [RFC2136] */
+#define DNS_RCODE_DSOTYPENI 11 /* DSO-TYPE Not Implemented [RFC8490] */
 #define DNS_RCODE_BADVERS   16 /* Bad OPT Version [RFC6891] */
 #define DNS_RCODE_BADSIG    16 /* TSIG Signature Failure [RFC2845] */
 #define DNS_RCODE_BADKEY    17 /* Key not recognized [RFC2845] */
