@@ -1,6 +1,6 @@
 #pragma once
 
-/* Built from IANA online data at 2022-08-01 16:57:22 +0800 */
+/* Built from IANA online data at 2023-04-23 18:29:56 +0800 */
 
 #define DNS_RRTYPE_Reserved 0 /*  [RFC6895] */
 #define DNS_RRTYPE_A 1 /* a host address [RFC1035] */
@@ -24,8 +24,8 @@
 #define DNS_RRTYPE_X25 19 /* for X.25 PSDN address [RFC1183] */
 #define DNS_RRTYPE_ISDN 20 /* for ISDN address [RFC1183] */
 #define DNS_RRTYPE_RT 21 /* for Route Through [RFC1183] */
-#define DNS_RRTYPE_NSAP 22 /* "for NSAP address  NSAP style A record" */
-#define DNS_RRTYPE_NSAP_PTR 23 /* "for domain name pointer  NSAP style" */
+#define DNS_RRTYPE_NSAP 22 /* "for NSAP address  NSAP style A record (DEPRECATED)" */
+#define DNS_RRTYPE_NSAP_PTR 23 /* "for domain name pointer  NSAP style (DEPRECATED)" */
 #define DNS_RRTYPE_SIG 24 /* for security signature [RFC2536][RFC2931][RFC3110][RFC4034] */
 #define DNS_RRTYPE_KEY 25 /* for security key [RFC2536][RFC2539][RFC3110][RFC4034] */
 #define DNS_RRTYPE_PX 26 /* X.400 mail mapping information [RFC2163] */
