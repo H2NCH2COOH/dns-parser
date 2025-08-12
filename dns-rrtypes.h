@@ -1,6 +1,6 @@
 #pragma once
 
-/* Built from IANA online data at 2023-04-23 18:29:56 +0800 */
+/* Built from IANA online data at 2025-08-12 16:25:54 +0800 */
 
 #define DNS_RRTYPE_Reserved 0 /*  [RFC6895] */
 #define DNS_RRTYPE_A 1 /* a host address [RFC1035] */
@@ -42,7 +42,7 @@
 #define DNS_RRTYPE_CERT 37 /* CERT [RFC4398] */
 #define DNS_RRTYPE_A6 38 /* A6 (OBSOLETE - use AAAA) [RFC2874][RFC3226][RFC6563] */
 #define DNS_RRTYPE_DNAME 39 /* DNAME [RFC6672] */
-#define DNS_RRTYPE_SINK 40 /* SINK [Donald_E_Eastlake][draft-eastlake-kitchen-sink] */
+#define DNS_RRTYPE_SINK 40 /* SINK [Donald_E_Eastlake][draft-eastlake-kitchen-sink-02] */
 #define DNS_RRTYPE_OPT 41 /* OPT [RFC3225][RFC6891] */
 #define DNS_RRTYPE_APL 42 /* APL [RFC3123] */
 #define DNS_RRTYPE_DS 43 /* Delegation Signer [RFC4034] */
@@ -66,8 +66,11 @@
 #define DNS_RRTYPE_OPENPGPKEY 61 /* OpenPGP Key [RFC7929] */
 #define DNS_RRTYPE_CSYNC 62 /* Child-To-Parent Synchronization [RFC7477] */
 #define DNS_RRTYPE_ZONEMD 63 /* Message Digest Over Zone Data [RFC8976] */
-#define DNS_RRTYPE_SVCB 64 /* General Purpose Service Binding [RFC-ietf-dnsop-svcb-https-10] */
-#define DNS_RRTYPE_HTTPS 65 /* Service Binding type for use with HTTP [RFC-ietf-dnsop-svcb-https-10] */
+#define DNS_RRTYPE_SVCB 64 /* General-purpose service binding [RFC9460] */
+#define DNS_RRTYPE_HTTPS 65 /* SVCB-compatible type for use with HTTP [RFC9460] */
+#define DNS_RRTYPE_DSYNC 66 /* Endpoint discovery for delegation synchronization [RFC-ietf-dnsop-generalized-notify-09] */
+#define DNS_RRTYPE_HHIT 67 /* Hierarchical Host Identity Tag [draft-ietf-drip-registries-28] */
+#define DNS_RRTYPE_BRID 68 /* UAS Broadcast Remote Identification [draft-ietf-drip-registries-28] */
 #define DNS_RRTYPE_SPF 99 /*  [RFC7208] */
 #define DNS_RRTYPE_UINFO 100 /*  [IANA-Reserved] */
 #define DNS_RRTYPE_UID 101 /*  [IANA-Reserved] */
@@ -79,6 +82,7 @@
 #define DNS_RRTYPE_LP 107 /*  [RFC6742] */
 #define DNS_RRTYPE_EUI48 108 /* an EUI-48 address [RFC7043] */
 #define DNS_RRTYPE_EUI64 109 /* an EUI-64 address [RFC7043] */
+#define DNS_RRTYPE_NXNAME 128 /* NXDOMAIN indicator for Compact Denial of Existence [RFC-ietf-dnsop-compact-denial-of-existence-07] */
 #define DNS_RRTYPE_TKEY 249 /* Transaction Key [RFC2930] */
 #define DNS_RRTYPE_TSIG 250 /* Transaction Signature [RFC8945] */
 #define DNS_RRTYPE_IXFR 251 /* incremental transfer [RFC1995] */
@@ -89,8 +93,12 @@
 #define DNS_RRTYPE_URI 256 /* URI [RFC7553] */
 #define DNS_RRTYPE_CAA 257 /* Certification Authority Restriction [RFC8659] */
 #define DNS_RRTYPE_AVC 258 /* Application Visibility and Control [Wolfgang_Riedel] */
-#define DNS_RRTYPE_DOA 259 /* Digital Object Architecture [draft-durand-doa-over-dns] */
+#define DNS_RRTYPE_DOA 259 /* Digital Object Architecture [draft-durand-doa-over-dns-02] */
 #define DNS_RRTYPE_AMTRELAY 260 /* Automatic Multicast Tunneling Relay [RFC8777] */
-#define DNS_RRTYPE_TA 32768 /* DNSSEC Trust Authorities "[Sam_Weiler][http://cameo.library.cmu.edu/][Deploying DNSSEC Without a Signed Root.  Technical Report 1999-19 */
+#define DNS_RRTYPE_RESINFO 261 /* Resolver Information as Key/Value Pairs [RFC9606] */
+#define DNS_RRTYPE_WALLET 262 /* Public wallet address [Paul_Hoffman] */
+#define DNS_RRTYPE_CLA 263 /* BP Convergence Layer Adapter [draft-johnson-dns-ipn-cla-07] */
+#define DNS_RRTYPE_IPN 264 /* BP Node Number [draft-johnson-dns-ipn-cla-07] */
+#define DNS_RRTYPE_TA 32768 /* DNSSEC Trust Authorities "[Sam_Weiler][Deploying DNSSEC Without a Signed Root.  Technical Report 1999-19 */
 #define DNS_RRTYPE_DLV 32769 /* DNSSEC Lookaside Validation (OBSOLETE) [RFC8749][RFC4431] */
 #define DNS_RRTYPE_Reserved 65535 /*   */

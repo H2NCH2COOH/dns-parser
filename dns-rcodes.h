@@ -1,6 +1,6 @@
 #pragma once
 
-/* Built from IANA online data at 2023-04-23 19:09:16 +0800 */
+/* Built from IANA online data at 2025-08-12 16:25:50 +0800 */
 
 #define DNS_RCODE_NoError 0 /* No Error [RFC1035] */
 #define DNS_RCODE_FormErr 1 /* Format Error [RFC1035] */
