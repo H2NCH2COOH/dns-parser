@@ -1,6 +1,6 @@
 #pragma once
 
-/* Built from IANA online data at 2025-08-12 16:25:54 +0800 */
+/* Built from IANA online data at 2026-06-29 17:54:31 +0800 */
 
 #define DNS_RRTYPE_Reserved 0 /*  [RFC6895] */
 #define DNS_RRTYPE_A 1 /* a host address [RFC1035] */
@@ -68,9 +68,9 @@
 #define DNS_RRTYPE_ZONEMD 63 /* Message Digest Over Zone Data [RFC8976] */
 #define DNS_RRTYPE_SVCB 64 /* General-purpose service binding [RFC9460] */
 #define DNS_RRTYPE_HTTPS 65 /* SVCB-compatible type for use with HTTP [RFC9460] */
-#define DNS_RRTYPE_DSYNC 66 /* Endpoint discovery for delegation synchronization [RFC-ietf-dnsop-generalized-notify-09] */
-#define DNS_RRTYPE_HHIT 67 /* Hierarchical Host Identity Tag [draft-ietf-drip-registries-28] */
-#define DNS_RRTYPE_BRID 68 /* UAS Broadcast Remote Identification [draft-ietf-drip-registries-28] */
+#define DNS_RRTYPE_DSYNC 66 /* Endpoint discovery for delegation synchronization [RFC9859] */
+#define DNS_RRTYPE_HHIT 67 /* Hierarchical Host Identity Tag [RFC9886] */
+#define DNS_RRTYPE_BRID 68 /* UAS Broadcast Remote Identification [RFC9886] */
 #define DNS_RRTYPE_SPF 99 /*  [RFC7208] */
 #define DNS_RRTYPE_UINFO 100 /*  [IANA-Reserved] */
 #define DNS_RRTYPE_UID 101 /*  [IANA-Reserved] */
@@ -82,7 +82,7 @@
 #define DNS_RRTYPE_LP 107 /*  [RFC6742] */
 #define DNS_RRTYPE_EUI48 108 /* an EUI-48 address [RFC7043] */
 #define DNS_RRTYPE_EUI64 109 /* an EUI-64 address [RFC7043] */
-#define DNS_RRTYPE_NXNAME 128 /* NXDOMAIN indicator for Compact Denial of Existence [RFC-ietf-dnsop-compact-denial-of-existence-07] */
+#define DNS_RRTYPE_NXNAME 128 /* NXDOMAIN indicator for Compact Denial of Existence [RFC9824] */
 #define DNS_RRTYPE_TKEY 249 /* Transaction Key [RFC2930] */
 #define DNS_RRTYPE_TSIG 250 /* Transaction Signature [RFC8945] */
 #define DNS_RRTYPE_IXFR 251 /* incremental transfer [RFC1995] */
